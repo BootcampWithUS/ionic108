@@ -35,8 +35,7 @@ angular.module('starter', ['ionic', 'ionic.contrib.ui.tinderCards'])
       url: '/people',
       views: {
         'menuContent': {
-          templateUrl: 'views/people/people.html',
-          controller: 'profileCtrl'
+          templateUrl: 'views/people/people.html'
         }
       }
     })
