@@ -39,7 +39,17 @@ angular.module('starter', ['ionic', 'ionic.contrib.ui.tinderCards'])
         }
       }
     })
+    .state('app.invite', {
+              url: '/invite',
+              views: {
+                'menuContent': {
+                  templateUrl: 'views/invite/invite.html',
+                  controller: 'inviteCtrl'
+                }
+              }
+    })
   ;
+  
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/people');
 })
