@@ -48,8 +48,18 @@ angular.module('starter', ['ionic', 'ionic.contrib.ui.tinderCards'])
                 }
               }
     })
+
+    .state('app.settings', {
+          url: '/settings',
+          views: {
+            'menuContent': {
+              templateUrl: 'views/settings/settings.html',
+              controller: 'settingsCtrl'
+            }
+          }
+        })
   ;
-  
+
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/people');
 })
